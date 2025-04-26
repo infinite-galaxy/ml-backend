@@ -85,6 +85,9 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
 
+      - name: Install Cosign
+        uses: sigstore/cosign-installer@v3
+
       - name: Update app version
         run: sed -i "s/version = "0.1.0"/version = "${{ steps.version.outputs.version }}"/g" pyproject.toml
 
