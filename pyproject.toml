@@ -9,7 +9,7 @@ authors = [
 [tool.poetry.dependencies]
 python = "^3.11"
 numpy = "1.26.4"
-onnxruntime = "1.18.1"
+onnxruntime = "1.21.1"
 flask = "3.1.0"
 pybase64 = "1.4.1"
 gunicorn = "23.0.0"
