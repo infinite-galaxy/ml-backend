@@ -1,12 +1,12 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base",
+    "config:recommended",
     "schedule:weekends",
     ":semanticCommits",
     ":pinAllExceptPeerDependencies"
   ],
-  "stabilityDays": 7,
+  "minimumReleaseAge": "7 days",
   "baseBranches": [
     "develop"
   ],
@@ -54,13 +54,13 @@
         "minor",
         "patch"
       ],
-      "excludeDepNames": [
-        "python"
-      ],
       "automerge": true,
       "automergeStrategy": "fast-forward",
       "labels": [
         "dependencies"
+      ],
+      "matchDepNames": [
+        "!python"
       ]
     },
     {
@@ -71,12 +71,12 @@
       "matchUpdateTypes": [
         "major"
       ],
-      "excludeDepNames": [
-        "python"
-      ],
       "labels": [
         "dependencies",
         "breaking"
+      ],
+      "matchDepNames": [
+        "!python"
       ]
     },
     {
