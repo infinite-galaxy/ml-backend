@@ -62,6 +62,7 @@
     },
     {
       "groupName": "non-major dependencies",
+      "groupSlug": "non-major-dependencies",
       "matchManagers": [
         "poetry"
       ],
@@ -80,6 +81,7 @@
     },
     {
       "groupName": "major dependencies",
+      "groupSlug": "dependencies",
       "matchManagers": [
         "poetry"
       ],
