@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ml-backend"
-version = "0.1.0"
+version = "1.1.0"
 description = "INFINITE Galaxy machine learning back-end app"
 authors = [
   "Muhammad Naufal <me@falkia34.dev>",
