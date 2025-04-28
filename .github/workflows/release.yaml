@@ -89,7 +89,7 @@ jobs:
         uses: sigstore/cosign-installer@v3
 
       - name: Update app version
-        run: sed -i "s/version = "0.1.0"/version = "${{ steps.version.outputs.version }}"/g" pyproject.toml
+        run: sed -i "s/version = \".*\"/version = \"${{ steps.version.outputs.version }}\"/g" pyproject.toml
 
       - name: Extract metadata for Container
         id: meta
