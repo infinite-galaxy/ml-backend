@@ -1,7 +1,6 @@
 import base64
 import cv2
 import numpy as np
-import logging
 from ml_backend.application.detect import Detect
 from ml_backend.domain.entities.rdd_features import RddFeatures
 from ml_backend.domain.repositories.rdd_repository_abc import RddRepositoryABC
@@ -15,18 +14,7 @@ rdd_repository: RddRepositoryABC = YoloRddRepository()
 # Use case
 detect = Detect(rdd_repository)
 
-
-def handler(job):
-    """ Handler function that will be used to process jobs. """
-
-    job_input = job['input']
-
-    features = job_input.get('features')
-
-
 app = Flask(__name__)
-logging.basicConfig(level=logging.INFO)
-
 
 @app.route('/detect', methods=['POST'])
 def predict():
