@@ -25,7 +25,7 @@ class YoloRddRepository(RddRepositoryABC):
         [37, 210, 209],
     ]
     # Default thresholds
-    DEFAULT_CONF_THRESH = 0.2
+    DEFAULT_CONF_THRESH = 0.05
     DEFAULT_IOU_THRESH = 0.45
     # Default input size
     DEFAULT_INPUT_WIDTH = 640
