@@ -56,7 +56,7 @@ def predict():
         return jsonify({
             'status': 'success',
             'data': {
-                'detections:': detections,
+                'detections': detections,
                 'image': image,
                 'meta': {
                     'model_id': model_id,
