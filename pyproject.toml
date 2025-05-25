@@ -8,8 +8,8 @@ authors = [
 
 [tool.poetry.dependencies]
 python = "^3.11"
-numpy = "2.2.5"
-onnxruntime = "1.21.1"
+numpy = "2.2.6"
+onnxruntime = "1.22.0"
 flask = "3.1.0"
 pybase64 = "1.4.1"
 gunicorn = "23.0.0"
