@@ -8,12 +8,12 @@ authors = [
 
 [tool.poetry.dependencies]
 python = "^3.11"
-numpy = "2.2.5"
-onnxruntime = "1.21.1"
+numpy = "2.5.2"
+onnxruntime = "1.29.0"
 flask = "3.1.0"
-pybase64 = "1.4.1"
+pybase64 = "1.5.0"
 gunicorn = "23.0.0"
-opencv-python-headless = "4.11.0.86"
+opencv-python-headless = "4.14.0.94"
 
 [build-system]
 requires = ["poetry-core"]
