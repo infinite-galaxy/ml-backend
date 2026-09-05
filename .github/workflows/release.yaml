@@ -77,7 +77,7 @@ jobs:
           PRE_RELEASE_VERSION: ${{ inputs.pre_release_version }}
 
       - name: Checkout repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
